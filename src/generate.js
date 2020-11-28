@@ -136,7 +136,7 @@ for (const zoneModule of Object.keys(zoneData)) {
     const data = zoneData[zoneModule];
     const outDir = path.join(__dirname, "..", "dist", zoneModule);
     mkdirp.sync(outDir);
-    fs.writeFileSync(path.join(outDir, "timezone-data.json"), JSON.stringify(data));
+    fs.writeFileSync(path.join(outDir, "timezone-data.json"), JSON.stringify(data, null, 2));
 }
 
 // generate other files

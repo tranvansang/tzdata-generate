@@ -26,7 +26,7 @@ function parse(args) {
       return value.toString()
     }
     return value
-  }));
+  }, 2));
 }
 
 parse(process.argv);
