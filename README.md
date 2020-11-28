@@ -3,12 +3,6 @@ Generator for the tzdata-* NPM modules.
 
 
 ## Usage
-Releasing a new version:
+How to rebuild:
 
-- extract tzdataXXX.tar.gz to input/tzdataXXX/
-- ./newdata.sh
-- commit and check changes
-- ensure .npmrc points to world
-- sync with Github
-- node src/publish.js
-- create a release tag
+- `./run.sh tzdataXXX.tar.gz`. For example, `./run.sh tzdb-2020d.tar.gz`.
